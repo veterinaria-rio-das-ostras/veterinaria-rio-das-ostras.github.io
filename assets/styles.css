@@ -17,13 +17,13 @@ header {
 }
 
 .image-container {
-    margin-bottom: 20px;
+    margin-bottom: 200px;
 }
 
 .slide {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     margin: 0 auto;
     display: block;
