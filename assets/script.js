@@ -1,4 +1,9 @@
-const images = ['image-1.jpeg', 'image-2.jpeg', 'image-3.jpeg'];
+const images = [
+    'https://veterinaria-rio-das-ostras.github.io/assets/image-1.jpeg',
+    'https://veterinaria-rio-das-ostras.github.io/assets/image-2.jpeg',
+    'https://veterinaria-rio-das-ostras.github.io/assets/image-3.jpeg'
+];
+
 let currentIndex = 0;
 
 function changeSlide() {
