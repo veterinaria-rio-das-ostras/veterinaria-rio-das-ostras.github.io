@@ -1,4 +1,4 @@
-const images = ['imagem1.jpg', 'imagem2.jpg', 'imagem3.jpg'];
+const images = ['image-1.jpeg', 'image-2.jpeg', 'image-3.jpeg'];
 let currentIndex = 0;
 
 function changeSlide() {
