@@ -14,7 +14,5 @@ function changeSlide() {
 setInterval(changeSlide, 5000);
 
 function agendar() {
-    // Aqui você pode adicionar a lógica para o agendamento
     alert('Você será redirecionado para a página de agendamento.');
-    // Por exemplo: window.location.href = 'pagina-de-agendamento.html';
 }
