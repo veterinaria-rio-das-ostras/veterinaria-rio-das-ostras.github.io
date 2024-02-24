@@ -1,7 +1,7 @@
 const images = [
-    'https://veterinaria-rio-das-ostras.github.io/assets/image-1.jpeg',
     'https://veterinaria-rio-das-ostras.github.io/assets/image-2.jpeg',
-    'https://veterinaria-rio-das-ostras.github.io/assets/image-3.jpeg'
+    'https://veterinaria-rio-das-ostras.github.io/assets/image-3.jpeg',
+    'https://veterinaria-rio-das-ostras.github.io/assets/image-1.jpeg'
 ];
 
 let currentIndex = 0;
@@ -14,5 +14,6 @@ function changeSlide() {
 setInterval(changeSlide, 5000);
 
 function agendar() {
-    alert('Você será redirecionado para a página de agendamento.');
+    var mensagem = encodeURIComponent("Olá, gostaria de agendar uma consulta com você.");
+    window.location.href = "https://api.whatsapp.com/send?phone=+5511946273408&text=" + mensagem;
 }
