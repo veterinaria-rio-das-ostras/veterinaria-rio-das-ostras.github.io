@@ -17,3 +17,19 @@ function agendar() {
     var mensagem = encodeURIComponent("Olá, gostaria de agendar uma consulta com você.");
     window.location.href = "https://api.whatsapp.com/send?phone=+5511946273408&text=" + mensagem;
 }
+
+function animateButton() {
+    const button = document.querySelector('.agendar');
+    button.classList.remove('agendar');
+    setTimeout(() => {
+        button.classList.add('agendar');    
+    }, 500);
+    
+}
+
+function repeatAnimation() {
+    animateButton();
+    setTimeout(repeatAnimation, 5000);
+}
+
+repeatAnimation();

@@ -55,10 +55,6 @@ button {
     animation: shake 0.5s ease-in-out;
 }
 
-.agendar:nth-child(odd) {
-    animation-delay: 2s;
-}
-
 button:hover {
     background-color: #45a049;
 }
