@@ -42,23 +42,21 @@ button {
     font-size: 16px;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
 }
 
 .agendar {
-    animation-name: pulse; /* Nome da animação */
-    animation-duration: 1s; /* Duração da animação */
-    animation-iteration-count: infinite; /* Repetição infinita da animação */
-    animation-timing-function: ease-in-out; /* Função de temporização da animação */
+    animation: shake 0.5s ease-in-out;
+}
+
+.agendar:nth-child(odd) {
+    animation-delay: 2s;
 }
 
 button:hover {
